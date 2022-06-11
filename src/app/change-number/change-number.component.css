@@ -1,0 +1,12 @@
+button{
+  font-family: 'Kdam Thmor Pro' , sans-serif;
+  background:rgba(119, 119, 119, 0.73);
+  border-radius: 15px;
+  transition: all 1s;
+}
+
+button:hover{
+  background: black;
+  color:rgb(0, 255, 55);
+  border-color:rgb(77, 77, 77);
+}

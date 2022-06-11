@@ -1,0 +1,64 @@
+<h1 class="display-3 offset-1">
+  Nome do Componente: <i>{{ nomeComponente }}</i>
+</h1>
+<p class="offset-1" style="font-size: 2em; margin-bottom: 1em; margin-top: 1em">
+  <strong>Assunto</strong>: Diretivas e Eventos
+</p>
+<hr />
+<div class="offset-1" style="font-size: 1em; color: yellow">
+  Instale e configure o <i>ngx-clipboard</i> pro TypeScript e importe
+  <i>ClipboardService</i> para utilizar o recurso de copiar para area de
+  transferencia<br />
+
+  <div class="install-img" *ngFor="let img of imgsInstall">
+    <img class="col-4 offset-1" [src]="img.url" /><br /><br />
+  </div>
+</div>
+<h2 class="display-4 offset-2" [ngStyle]="{ color: 'whitesmoke' }">
+  <hr />
+  SLIDE 1 <i>Revisão de Angular</i>
+  <hr />
+  Exemplos:
+</h2>
+<div class="container">
+  <br />
+  <h3
+    [ngStyle]="{ 'font-size': size + 'rem', 'font-family': font, color: color }"
+  >
+    SETANDO ESSE H3 COMO VERMELHO via ngStyle E EVENTO CLICK:
+  </h3>
+  <hr />
+  <button class="h5 offset-1" (click)="copiarTexto(1)">Copiar Codigo</button>
+  <img class="col-7 offset-1" src="assets/img/cap1.png" /><br /><br />
+  <button class="h5 offset-1" (click)="copiarTexto(2)">Copiar Codigo</button>
+  <img class="col-6 offset-1" src="assets/img/cap1.1.png" /><br /><br />
+  <button class="h5 offset-1" (click)="copiarTexto(3)">Copiar Codigo</button>
+  <img class="col-6 offset-1" src="assets/img/cap1.2.png" /><br /><br />
+  <br />
+  <br />
+</div>
+
+<div class="container">
+  <br />
+  <h3 [ngClass]="classes">Aplicando classes com ngClass texto</h3>
+  <hr />
+  <p class="offset-1 row" *ngIf="mostra" style="color: yellow">
+    Nesse h3 acima foi aplicado um conjunto de classes utilizando [ngClass] e
+    nesse paragrafo foi aplicado uma renderização condicional com o *ngIf, que
+    varia quando aperta o botao abaixo<br>
+    <img class="col-6 img-cap2" src="assets/img/cap2.png" /><br /><br />
+    <img class="col-3 offset-1 img-cap2" src="assets/img/cap2.1.png" /><br /><br />
+
+  </p>
+  <button class="h5 offset-1" (click)="mostraParag()">
+    O que aconteceu nesse texto ?
+  </button>
+</div>
+
+
+<div class="container">
+  <app-emitter></app-emitter>
+  <br><br>
+</div>
+
+<br><br><br>

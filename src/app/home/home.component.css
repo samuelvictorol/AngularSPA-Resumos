@@ -1,0 +1,17 @@
+.display-2{
+  background: white;
+}
+
+.circular-wrapper{
+  position: relative;
+}
+
+.circular{
+  position: absolute;
+  right: -100px;
+  background:white;
+  width:700px;
+  height:700px;
+  bottom: -200px;
+  border-radius: 200px;
+}

@@ -1,0 +1,23 @@
+<h1 class="display-3 offset-1">
+{{ "nome do componente: " +  nomeComponente | titlecase}}
+</h1>
+<hr>
+<h2 class="display-4 offset-1">Exemplos </h2>
+<hr>
+<div class="container">
+  <div class="display-4">titlecase:</div>
+    <p><i>{{ texto }}</i><br>- aplicando -<br> {{ texto | titlecase }}</p>
+  <div class="display-4">date:  </div>
+  <p><i>{{ hoje }}</i><br>- aplicando -<br> {{ hoje | date: "fullDate" }}</p>
+</div>
+<br>
+
+<div class="container">
+  <app-two-way-binding></app-two-way-binding>
+</div>
+<br>
+
+<div class="container">
+  <app-busca-carro></app-busca-carro>
+</div>
+<br><br>  <br><br>  <br><br>

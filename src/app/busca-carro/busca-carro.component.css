@@ -1,0 +1,17 @@
+.cards-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap ;
+
+}
+
+.card{
+  width: 18rem;
+  margin-left: 2em;
+  margin-top: 1em;
+  color: black;
+}
+
+.card-img-top{
+  height: 12rem;
+}

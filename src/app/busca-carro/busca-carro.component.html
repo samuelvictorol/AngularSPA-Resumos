@@ -1,0 +1,29 @@
+<div class="bc-wrapper">
+  <br>
+  <form class="form-wrapper">
+    <input
+      type="text"
+      [(ngModel)]="busca"
+      placeholder="Digite a marca do Carro"
+      name="busca"
+    />
+    <input type="submit" value="Pesquisar" (click)="buscarCarros()" />
+  </form>
+  <br><br>
+  <p *ngIf="resultadoBusca">{{ textoResultado }}</p>
+  <div class="cards-wrapper offset-1" >
+    <div class="card-for" *ngFor="let carro of carrosFiltrados" >
+      <div class="card">
+        <img [src]="carro.url" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ carro.modelo }}</h5>
+          <p class="card-text">Marca: {{ carro.marca }}</p>
+          <p class="card-text">Ano: {{ carro.ano }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+
+

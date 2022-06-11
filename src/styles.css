@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+/* You can add global styles to this file, and also import other style files */
+body{
+  overflow-x: hidden;
+  background-color: black;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background:   rgb(30, 30, 30);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(1, 1, 1);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid rgb(132, 132, 132);  /* creates padding around scroll thumb */
+}
